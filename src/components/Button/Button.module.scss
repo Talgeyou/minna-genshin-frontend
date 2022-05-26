@@ -1,0 +1,24 @@
+.Button {
+    width: 100%;
+    padding: 0.5em 1em;
+    border-radius: 0.25em;
+    background-color: tomato;
+    color: mintcream;
+    border: none;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &_Variant_Danger {
+        background-color: firebrick;
+    }
+
+    &_Variant_Success {
+        background-color: forestgreen;
+    }
+
+    &_Variant_Info {
+        background-color: burlywood;
+    }
+}

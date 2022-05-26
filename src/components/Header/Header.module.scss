@@ -1,0 +1,13 @@
+.Header {
+    padding: 1em;
+    background-color: tomato;
+    color: mintcream;
+
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+
+    &_Auth {
+        grid-column: -1;
+    }
+}

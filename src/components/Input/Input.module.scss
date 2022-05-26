@@ -1,0 +1,49 @@
+.Input {
+    width: 100%;
+    display: grid;
+    align-items: center;
+    position: relative;
+    font-size: 16px;
+    &_Label {
+        pointer-events: none;
+        position: absolute;
+        top: 45%;
+        left: 0.75em;
+        transform: translateY(-50%);
+
+        transition: top 0.3s ease, transform 0.3s ease, font-size 0.3s ease;
+    }
+
+    &_Input {
+        font-size: inherit;
+        width: 100%;
+        padding: 0.5em;
+        border-radius: 0.25em;
+        border: solid 1px #212121;
+
+        transition: border-color 0.3s ease, padding 0.3s ease;
+
+        &:focus {
+            outline: 0;
+            border-color: cadetblue;
+        }
+    }
+
+    &_Input:not([value=""]) {
+        padding: 1.5em 0.5em 0.5em 0.5em;
+
+        &:valid {
+            border-color: aquamarine;
+        }
+
+        &:invalid {
+            border-color: crimson;
+        }
+    }
+
+    &_Input:not([value=""]) + &_Label {
+        top: 0.3em;
+        transform: translateY(0);
+        font-size: 0.75em;
+    }
+}

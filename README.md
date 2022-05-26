@@ -1,0 +1,1 @@
+# Minna Genshin Frontend

@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap");
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body,
+input,
+textarea,
+button,
+select,
+option {
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
